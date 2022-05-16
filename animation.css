@@ -1,0 +1,254 @@
+#containerAllElement{
+    background-color: black;
+}
+#page4{
+    background: black;
+    height: 100vh;
+}
+body{
+    background: black;
+}
+.fadein{
+    animation:fadeIn .7s ;
+    animation-fill-mode: forwards;
+}
+.fadeout{
+    animation:fadeOut .7s ;
+    animation-fill-mode: forwards;
+}
+
+
+.fadein2{
+    animation:fadeIn2 1s .5s;
+    animation-fill-mode: forwards;
+}
+.fadeout2{
+    animation:fadeOut2 1s .5s;
+    animation-fill-mode: forwards;
+}
+
+.transelateX{
+    animation:transelateX .7s 1s  ;
+    animation-fill-mode: forwards;
+}
+.transelate_X{
+    animation:transelate_X .7s 1s  ;
+    animation-fill-mode: forwards;
+}
+
+.transelateY{
+    animation:transelateY .7s  infinite;
+    animation-fill-mode: forwards;
+}
+.transelate_Y{
+    animation:transelate_Y .7s  infinite ;
+    animation-fill-mode: forwards;
+}
+
+.flipIn{
+    animation:flipIn 2s  ;
+    animation-fill-mode: forwards;
+}
+.fipOut{
+    animation: fipOut 2s  ;
+    animation-fill-mode: forwards;
+}
+.opacityde0{
+    opacity: 0;
+}
+
+.opacityde1{
+    opacity: 1;
+}
+.opacity0{
+    animation: opacity0 1s;
+    animation-fill-mode: forwards;
+}
+
+.opacity1{
+    animation: opacity1 1s ;
+    animation-fill-mode: forwards;
+}
+
+.opacity0_1{
+    animation: opacity0 1s;
+    animation-fill-mode: forwards;
+}
+
+.opacity1_1{
+    animation: opacity1 1s .5s;
+    animation-fill-mode: forwards;
+}
+
+.opacity0_2{
+    animation: opacity0 1s  ;
+    animation-fill-mode: forwards;
+}
+
+.opacity1_2{
+    animation: opacity1 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+.transX{
+    opacity: 1;
+    animation: transX 1s;
+    animation-fill-mode: forwards;
+}
+.trans_X{
+    opacity: 0;
+    animation: trans_X 1s;
+    animation-fill-mode: forwards;
+}
+.transX1{
+    opacity: 1;
+    animation: transX 1s .3s;
+    animation-fill-mode: forwards;
+}
+.trans_X1{
+    opacity: 0;
+    animation: trans_X 1s;
+    animation-fill-mode: forwards;
+}
+.transX2{
+    opacity: 1;
+    animation: transX 1s .5s;
+    animation-fill-mode: forwards;
+}
+.trans_X2{
+    opacity: 0;
+    animation: trans_X 1s;
+    animation-fill-mode: forwards;
+}
+.bliz{
+    opacity: 1;
+    animation: bliz 1s infinite;
+}
+/* listes des animation */
+@keyframes bliz {
+   0%{ 
+       transform: scaleX(null);
+       transform: scaleY(null);
+    }
+   10%{
+        transform: scaleX(0);
+        transform: scaleY(0);
+    }
+   20%{
+        transform: scaleX(0);
+        transform: scaleY(0);
+    }
+   30%{
+        transform: scaleX(null);
+        transform: scaleY(null);
+    }
+   40%{
+        transform: scaleX(1);
+        transform: scaleY(1);
+    }
+   50%{
+        transform: scaleX(1);
+        transform: scaleY(1);
+    }
+   60%{
+        transform: scaleX(null);
+        transform: scaleY(null);
+    }
+   70%{
+        transform: scaleX(1);
+        transform: scaleY(1);
+    }
+   80%{    
+        transform: scaleX(1);
+       transform: scaleY(1);
+    }
+   100%{
+        transform: scaleX(null);
+        transform: scaleY(null);
+    }
+}
+@keyframes transX {
+    from{transform: translateX(1000px);}
+    to{transform: translateX(0);}
+}
+@keyframes trans_X {
+    from{transform:translateX(0);}
+    to{transform:translateX(-1000px);}
+}
+
+@keyframes transelateX {
+    from{transform:scaleX(-5);transform:scaleY(-5);}
+    to{transform:scaleX(null);transform:scaleY(null);}
+}
+@keyframes transelate_X {
+    from{transform:translateX(0);}
+    to{transform:translateX(-1000);}
+}
+
+@keyframes opacity1 {
+    from{
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+@keyframes opacity0 {
+    from{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    to{
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes fadeOut {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes fadeIn2 {
+    from{
+        opacity: 0;
+        transform: scaleX(10);
+        transform: scaleY(2);
+    }
+    to{
+        opacity: 1;
+        transform: scaleX(null);
+        transform: scaleY(null);
+    }
+}
+@keyframes fadeOut2 {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes flipIn {
+    0%{
+        transform:rotateY(0deg);
+        width: 1000px;
+    }
+    40%{
+        transform:rotateY(360deg);
+    }
+    100%{
+
+        transform:rotateZ(45deg);
+    }
+}
+@keyframes fipOut {
+    from{transform:rotate(360deg);}
+    to{transform:rotate(0deg);}
+}

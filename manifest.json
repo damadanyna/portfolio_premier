@@ -1,0 +1,16 @@
+{
+    "name":"Profil-professionelle",
+    "short-name":"Dama Dany",
+    "start_url":".",
+    "background_color":"#000",
+    "theme_color":"#000",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"img/logo.png",
+            "size":"192x192",
+            "type":"image/png"
+
+        }
+    ]
+}
